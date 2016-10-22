@@ -1,0 +1,73 @@
+.axis {
+    font-size: 10px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: rgb(216, 216, 216);
+    stroke-width: 1;
+    stop-opacity: 1;
+    shape-rendering: crispEdges;
+
+}
+
+.axisLabel{
+    font-size: 12px ;
+}
+
+.tick{
+    color: rgb(216, 216, 216);
+}
+/*Styling for on-hover tooltip*/
+.d3-tip {
+    line-height: 1;
+    /*font-weight: bold;*/
+    padding: 12px;
+    /*background: rgba(0, 0, 0, 0.8);*/
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 7px;
+    width: 100%;
+    line-height: 1;
+    /*color: rgba(0, 0, 0, 0.8);*/
+    color: rgb(216, 216, 216);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.legend rect {
+    fill:white;
+    opacity:0.8;
+}
+
+.legend text{
+    font-size: 1em;
+}
+
+
+
+/*!*Styling for grid lines*!*/
+/*.grid .tick {*/
+/*stroke: lightgrey;*/
+/*opacity: 0.7;*/
+/*}*/
+/*.grid path {*/
+/*stroke-width: 0;*/
+/*}*/
